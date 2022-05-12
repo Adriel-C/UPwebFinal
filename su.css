@@ -1,0 +1,158 @@
+
+#ditems{
+  display: block !important;
+  width: 100%;
+}
+
+.btn{
+  font-size: 22px !important;
+  color: white !important;
+  background-color: rgba(0,0,0,0) !important;
+  border-color: rgba(0,0,0,0) !important;
+  text-decoration: none !important;
+  font-family:  sans-serif !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-radius: 0 none rgba(0,0,0,0) !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+.btn-secondary.focus, .btn-secondary:focus, .btn.focus, .btn:focus{
+  box-shadow: rgba(0,0,0,0) !important;
+  background-color: rgba(0,0,0,0) !important;
+  border-color: rgba(0,0,0,0) !important;
+  outline: rgba(0,0,0,0) !important;
+  font-size: 22px !important;
+  color: white !important;
+  background-color: rgba(0,0,0,0) !important;
+  border-color: rgba(0,0,0,0) !important;
+  text-decoration: none !important;
+  font-family:  sans-serif !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-radius: 0 none rgba(0,0,0,0) !important;
+  padding: 0 !important;
+  border: 0 !important;
+
+} 
+
+#navtabss{
+  font-size: 22px !important;
+  color: white !important;
+  background-color: rgba(0,0,0,0) !important;
+  text-decoration: none !important;
+  display: block !important;
+}
+
+body{
+  margin: 0;
+
+}
+.bg{
+  background-image: url('oble.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+
+}
+.myBody{
+  background-color: rgba(255,255,255,0.91);
+  outline: 6px solid #800000;
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-bottom: 5%;
+  width: 60%;
+  padding: 30px 50px;
+}
+header{
+  background-color: #800000;
+  margin: 0;
+}
+table{
+  display: inline-block;
+}
+td:hover{
+  background-color: #3d0919;
+}
+#speed-button{
+  display: none !important;
+}
+#spin{
+  display: block !important;
+}
+#acUnits{
+  font-size: 22px;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  text-decoration: none;
+  display: block;
+  text-align: center !important;
+}
+select{
+  all: revert !important;
+}
+td{
+  font-family:  sans-serif;
+  color: white;
+  font-weight: bold;
+}
+table, td, th{
+    padding:4px 8px;
+    border-spacing: 30px 10px;
+}
+#navtabs,#lspeed{
+    font-size: 22px;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    text-decoration: none;
+    display: block;
+}
+select option{
+  display: block !important;
+}
+fieldset{
+  border: none !important;
+}
+fieldset{
+  display: block;
+margin-inline-start: 0;
+margin-inline-end: 0;
+padding-block-start: 0;
+padding-inline-start: 0;
+padding-inline-end: 0;
+padding-block-end: 0;
+min-inline-size: none;
+}
+#lnm,#fnm,#mnm{
+  color: black !important;
+  font-size: 15px;
+}
+#Fnme,#Lnme,#Mnme{
+  border-radius: 20px;
+  text-align: center;
+  height:30px;
+  width: 250px;
+}
+#datepicker, #tags{
+  text-align: center !important;
+  border-radius: 200px !important;
+  font-family: sans-serif;
+  width: 178px !important;
+}
+#province{
+  font-size:15px !important;
+  font-family: sans-serif;
+}
+#spinner{
+  width: 178px !important;
+  height: 17px !important;
+}
+#sub{
+  border-radius: 200px;
+  height: 25px;
+  width: 100px;
+}
+label{
+  margin: 0 !important;
+}

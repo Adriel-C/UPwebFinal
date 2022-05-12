@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="su.css">
+
+    <link rel="stylesheet" type="text/css"href="b4/bootstrap.min.css ">
+    <link rel="stylesheet" type="text/css"href="libraries\jqueryui\jquery-ui.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<header>
+  <center>
+    <div>
+      <!-- UP mindanao logo -->
+    <img src="logo.png" style="width:150px;margin-top:5px;"/>
+  </div>
+    <table>
+      <tr>
+        <td>
+          <!-- Menu bar for HOME -->
+          <a id="navtabs" href="home.html"> HOME </a>
+          </td>
+        </tr>
+    </table>
+    <table>
+      <tr>
+          <td>
+            <!-- Menu bar for Academic Programs -->
+            <a  id="navtabs"href="Academic Programs\AcademicPrograms.html"> ACADEMIC PROGRAMS </a>
+          </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>
+
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ACADEMIC UNITS
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="Academic Units\chss.html">College of Humanities and Social Sciences</a>
+              <a class="dropdown-item" href="Academic Units\csm.html">College of Science and Mathematics</a>
+              <a class="dropdown-item" href="Academic Units\som.html">School of Management</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+      <table>
+        <tr>
+          <td>
+            <!-- Menu bar for Sign-up -->
+            <a  id="navtabs"href="signup.html"> SIGN UP </a>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </header>
+<!-- Start of Body -->
+<body class="bg">
+  <div>
+  <center>
+    <div style="margin-top:30px;">
+  <!-- UP min logo with quotes -->
+  <img src="upmin logo.png" class="img-fluid mx-auto d-block"/>
+  </div>
+  </center>
+  <div>
+  <center>
+  <div class="myBody container-sm container-md container-lg container-xl mx-auto d-block">
+    <!-- Start of Sign up -->
+    <h1>Sign Up</h1>
+    <form>
+      <!-- Start of Name input -->
+      <!-- Input First Name -->
+      <label id="fnm">First Name</label><br>
+      <input id="Fnme" type="text"/><br>
+      <!-- Input Last Name -->
+      <label id="lnm">Last Name</label><br>
+      <input id="Lnme" type="text"/><br>
+      <!-- Input Middle Name -->
+      <label id="mnm">Middle Name</label><br>
+      <input id="Mnme" type="text"/><br>
+      <div class="widget"><br>
+      <!-- End of Name Input -->
+        <fieldset style="margin:10px;">
+          <!-- Start of Gender Input -->
+          <span id="rd1">
+            <input id="rdio" type="radio" name="radio-1" id="radio-1" value="MALE">
+            <label id="lbl"for="radio-2"><b>MALE</label>
+          </span>
+          <span id="rd2">
+            <input id="rdio" type="radio" name="radio-1" id="radio-2" value="FEMALE">
+            <label id="lbl"for="radio-3">FEMALE</b></label>
+          </span>
+          <!-- End of Gender Input -->
+        </fieldset>
+      </div>
+      <br>
+
+      <!-- Start of Birth Date Input -->
+      <label style="font-size:15px; font-family: sans-serif;">Birth Date</label>
+      <input type="text" id="datepicker"><br>
+      <!-- End of Birth Date Input -->
+
+      <!-- Start of Province Input -->
+      <div class="ui-widget">
+        <br><label for="tags" id="province">Province  :</label>
+        <input id="tags">
+      </div>
+      <!-- End of Province Input -->
+      <br>
+      <div>
+        <!-- Start of Year Level Input -->
+        <p id="spin">
+          <label for="spinner" id="province">Year Level:</label>
+          <input id="spinner" name="value">
+        </p>
+        <!-- End of Year Level Input -->
+      </div>
+
+      </form>
+        <!-- Submit Form -->
+        <button type="submit" id="sub">SUBMIT</button>
+      </div>
+    </center>
+    </div>
+  </div>
+
+
+<script type="text/javascript" src="libraries/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript" src="popper.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="libraries/jqueryui/jquery-ui.js"></script>
+
+<script type="text/javascript">
+$( function() { // FUNCTION For the academic units dropdown
+    $( "#hs" ).hide();
+} );
+$("#lspeed").click(function(){ // FUNCTION for academic dropdown using selectmenu()
+  $( function() {
+      $( "select" ).selectmenu();
+  } );
+  $("#hs").toggle();
+} );
+$( function() {
+  $( "#rdio" ).checkboxradio(); // FUNCTION for gender Input using checkboxradio()
+} );
+$( function() {
+  $( "#datepicker" ).datepicker(); //Funtion for Birthdate Input using datepicker()
+} );
+$( function() { //Function for Province Input using autocomplete()
+  var availableTags = [
+  // List of Provinces in Mindanao
+  // Start of list
+  "Agusan del Norte",
+  "Agusan del Sur",
+  "Basilan",
+  "Bukidnon",
+  "Camiguin",
+  "Compostela Valley",
+  "Cotabato (North Cotabato)",
+  "Davao del Norte",
+  "Davao del Sur",
+  "Davao Occidental",
+  "Davao Oriental",
+  "Dinagat Islands",
+  "Lanao del Norte",
+  "Lanao del Sur",
+  "Maguindanao",
+  "Misamis Occidental",
+  "Misamis Oriental",
+  "Sarangani",
+  "South Cotabato",
+  "Sultan Kudarat",
+  "Sulu",
+  "Surigao del Norte",
+  "Surigao del Sur",
+  "Tawi-Tawi",
+  "Zamboanga del Norte",
+  "Zamboanga Sibugay"
+  // End of list
+  ];
+  $( "#tags" ).autocomplete({
+    source: availableTags
+  });
+} );
+$( function() {
+  var spinner = $( "#spinner" ).spinner(); //FUNCTION for the yearlevel Input using  spinner()
+
+  $( "#disable" ).on( "click", function() {
+    if ( spinner.spinner( "option", "disabled" ) ) {
+      spinner.spinner( "enable" );
+    } else {
+      spinner.spinner( "disable" );
+    }
+  });
+  $( "#destroy" ).on( "click", function() {
+    if ( spinner.spinner( "instance" ) ) {
+      spinner.spinner( "destroy" );
+    } else {
+      spinner.spinner();
+    }
+  });
+  $( "#getvalue" ).on( "click", function() {
+    alert( spinner.spinner( "value" ) );
+  });
+  $( "#setvalue" ).on( "click", function() {
+    spinner.spinner( "value", 5 );
+  });
+
+$( "button" ).button();
+} );
+$(document).ready(function(){ // Function for printing the input values inside a text file
+  $("#sub").click(function(){
+    var firstname = $("#Fnme").val();
+    var middlename = $("#Mnme").val();
+    var lastname = $("#Lnme").val();
+    var gen = $("#rdio:checked").val();
+    var bday = $("#datepicker").val();
+    var prov = $("#tags").val();
+    var lvl = $("#spinner").val();
+    var userDetails = 'Name: ' + firstname + ' ' + middlename + ' ' + lastname;
+    var gender = ' | Gender: ' + gen;
+    var birthday = ' | Birth date: ' + bday;
+    var province = ' | Province: ' + prov;
+    var ylevel = ' | Year Level: ' + lvl;
+    var blog = new Blob([userDetails,gender,birthday,province,ylevel],
+      {
+        type:"application/json:utf - 8"
+      });
+      var userlink = document.createElement('a');
+      userlink.setAttribute('download', firstname + '.txt');
+      userlink.setAttribute('href', window.URL.createObjectURL(blog));
+      userlink.click();
+  });
+
+});
+
+function mion(){ //Function for the Academic units menu
+  let url = document.getElementById("speed").value;
+  window.open(url);
+}
+</script>
+
+</body>
+</html>
